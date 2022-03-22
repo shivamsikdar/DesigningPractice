@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS pactice4</title>
+    <style>
+        .container{
+            border: 5px solid rgb(25, 21, 66);
+            background-color: rgb(219, 171, 83);
+            height: 2500px;
+        }
+        
+    .box{
+        display: inline-block;
+        border: 5px solid rgb(102, 29, 29);
+        width: 250px;
+        height: 250px;
+        margin: 2px;
+    }
+    #box3{
+        /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+        /* position: relative; */
+        
+        /* absolute: Positions the element relative to the positon of its first parent*/
+        /* position: absolute; */
+        /* top: 34px;
+        left: 134px; */
+
+        /* fixed: Positions the element relative to the browser window; */
+        /* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+        /* sticky: Positions the element relative to the users scroll position */
+        position: sticky;
+        top: 3px;
+        background-color: blueviolet;
+    }
+    img{
+        height: 400px;
+        margin:  50px 250px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Hi! How are You?</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <div>
+        <img src="https://previews.123rf.com/images/lilkar/lilkar1509/lilkar150900001/44697400-autumn-background-with-maple-leaves.jpg" alt="image">
+        <p>This image is so Beautiful</p>
+    </div>
+</body>
+</html>
