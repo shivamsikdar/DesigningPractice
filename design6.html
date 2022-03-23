@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice6</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(82, 29, 82);
+            background-color: rgb(228, 185, 147);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid rgb(44, 6, 6);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(135, 184, 218);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+
+        p, h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1> Welcome to my Store </h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis nulla corrupti adipisci inventore consectetur dolorem, eum ad sequi dolore impedit? Illo minus blanditiis facere ullam sit, ipsa laboriosam enim alias dignissimos eius aliquam deleniti error numquam aut itaque omnis, iusto ab recusandae earum quia modi doloremque vitae! Corrupti itaque saepe, repellendus rerum similique, quae aperiam impedit rem eveniet fugit quod at ducimus consectetur voluptate molestiae error voluptatibus illum est quis, nihil mollitia delectus distinctio incidunt eum. Consequuntur, tempora esse?</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Phones</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, quas? Rerum ab omnis dicta aspernatur atque error nesciunt quis fugit aperiam magnam, ut iusto vel excepturi mollitia dolorem corporis quia consequuntur. At incidunt doloribus quod eaque iusto amet harum nobis inventore. Maiores aliquam sint blanditiis beatae provident. Quibusdam suscipit labore tempore magni voluptas inventore possimus, eius nobis perspiciatis natus esse pariatur, nostrum sit est fugiat nemo illum vitae sint sed corrupti eos quasi sunt veniam quaerat. Nesciunt exercitationem possimus quasi?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+        </div>
+    </div> 
+</body>
+</html>
