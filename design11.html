@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querries</title>
+    <style>
+    .box{
+        height: 100vh;
+        font-size: 50px;
+        text-align: center;
+        background-color: rgb(170, 39, 39);
+        color: white;
+        display: none;
+    }
+
+    @media only screen and (max-width:300px){
+        #box-1{
+            display: block;
+            background-color: cyan;
+            color: red;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        #box-2{
+            display: block;
+            background-color: blueviolet;
+            color: darkblue;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        #box-3{
+            display: block;
+            color: black;
+            background-color: rgb(199, 199, 111);
+        }
+    }
+
+    @media (min-width: 800px)  {
+        #box-4{
+            display: block;
+            background-color: rgb(159, 231, 159);
+            color: brown;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box-1">This is for 10th Students </div>
+    <div class="box" id="box-2">This is for 12th Students</div>
+    <div class="box" id="box-3">This is for  Graduate Students</div>
+    <div class="box" id="box-4">This is for Post Graduate Students</div>
+</div>
+</body>
+</html>
